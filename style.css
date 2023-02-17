@@ -1,0 +1,58 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    grid-template-areas: 
+    "user"
+    "button"
+    "output";
+    text-align: center;
+    background-color: #d6819c;
+
+}
+
+#user-input, #button, #display-element {
+    background-color: #ad6a7f;
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-style: none;
+    outline: none;
+}
+
+#user-input {
+    grid-area: user;
+    text-align: center;
+    margin-top: 20vh;
+
+
+}
+
+#button {
+    grid-area: button;
+    transition-duration: 0.4s;
+    background-color: #ad6a7f;
+
+}
+
+#button:hover {
+    grid-area: button;
+    background-color: #e687bd;
+
+}
+
+#display-element {
+    grid-area: output;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+}
